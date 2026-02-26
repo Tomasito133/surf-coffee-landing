@@ -244,6 +244,23 @@
       opacity: 0.9;
     }
 
+    .hero-actions {
+      margin-top: var(--space-4);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-trust {
+      margin-top: var(--space-3);
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
     /* Sections */
     .section {
       padding-block: var(--space-6);
@@ -336,7 +353,7 @@
       align-items: center;
       justify-content: center;
       gap: 6px;
-      padding: 10px 22px;
+      padding: 12px 24px;
       border-radius: var(--radius-pill);
       border: 1px solid var(--color-accent);
       background-color: transparent;
@@ -372,6 +389,17 @@
 
     .btn--ghost:hover {
       border-color: var(--color-accent);
+    }
+
+    .btn--primary {
+      background-color: var(--color-accent);
+      color: #ffffff;
+      border-color: var(--color-accent);
+    }
+
+    .btn--primary:hover {
+      background-color: #000000;
+      border-color: #000000;
     }
 
     /* Layout: double feature cards */
@@ -497,6 +525,10 @@
         padding-block: var(--space-7);
       }
 
+      .hero-actions {
+        flex-direction: row;
+      }
+
       .cards-grid--split {
         grid-template-columns: 1.1fr 1.1fr;
       }
@@ -525,6 +557,10 @@
 
       .hero-inner {
         padding-block: var(--space-6);
+      }
+
+      .btn {
+        width: 100%;
       }
     }
   </style>
@@ -558,6 +594,19 @@
           <p class="hero-subtitle">
             Места, где запах обжарки смешивается с шумом города, а рядом всегда кто-то, с кем можно разделить волну.
           </p>
+          <div class="hero-actions">
+            <button class="btn btn--primary">
+              Найти ближайший Surf Coffee
+              <span class="btn-icon">→</span>
+            </button>
+            <button class="btn btn--ghost">
+              Открыть свою кофейню
+              <span class="btn-icon">→</span>
+            </button>
+          </div>
+          <div class="hero-trust">
+            БОЛЕЕ 120 СПОТОВ В РОССИИ И ЗА РУБЕЖОМ
+          </div>
         </div>
       </section>
 
